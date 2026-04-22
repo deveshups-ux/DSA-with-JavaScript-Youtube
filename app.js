@@ -53,22 +53,64 @@
 
 //question 10
 
-let unit = Number(prompt("Enter Your Electricity Unit : "));
+// let unit = Number(prompt("Enter Your Electricity Unit : "));
 
-if (isNaN(unit)) {
-  console.log("Enter Valid Unit...");
-} else if (unit > 400) {
-  let bill = (unit - 400) * 13 + 200 * 8 + 100 * 6 + 100 * 4;
-  console.log(`Total Bill is ${bill}$`);
-} else if (unit > 201 && unit <= 400) {
-  let bill = (unit - 200) * 8 + 100 * 6 + 100 * 4;
-  console.log(`Total Bill is ${bill}$`);
-} else if (unit > 101 && unit <= 200) {
-  let bill = (unit - 100) * 6 + 100 * 4;
-  console.log(`Total Bill is ${bill}$`);
-} else if (unit > 0 && unit <= 100) {
-  let bill = unit * 4;
-  console.log(`Total Bill is ${bill}$`);
-} else {
-  console.log("Negative value is not valid...");
+// if (isNaN(unit)) {
+//   console.log("Enter Valid Unit...");
+// } else if (unit > 400) {
+//   let bill = (unit - 400) * 13 + 200 * 8 + 100 * 6 + 100 * 4;
+//   console.log(`Total Bill is ${bill}$`);
+// } else if (unit > 201 && unit <= 400) {
+//   let bill = (unit - 200) * 8 + 100 * 6 + 100 * 4;
+//   console.log(`Total Bill is ${bill}$`);
+// } else if (unit > 101 && unit <= 200) {
+//   let bill = (unit - 100) * 6 + 100 * 4;
+//   console.log(`Total Bill is ${bill}$`);
+// } else if (unit > 0 && unit <= 100) {
+//   let bill = unit * 4;
+//   console.log(`Total Bill is ${bill}$`);
+// } else {
+//   console.log("Negative value is not valid...");
+// }
+
+// question 11 INR
+let money = Number(prompt("Enter The Amount : "));
+
+if (isNaN(money)) {
+  console.log("Enter valid cost...");
+}
+if (money >= 500) {
+  console.log(`500 Notes : ${Math.floor(money / 500)}`);
+  money = money % 500;
+}
+if (money >= 200) {
+  console.log(`200 Notes : ${Math.floor(money / 200)}`);
+  money = money % 200;
+}
+if (money >= 100) {
+  console.log(`200 Notes : ${Math.floor(money / 100)}`);
+  money = money % 100;
+}
+if (money >= 50) {
+  console.log(`50 Notes : ${Math.floor(money / 50)}`);
+  money = money % 50;
+}
+if (money >= 20) {
+  console.log(`20 Notes : ${Math.floor(money / 20)}`);
+  money = money % 20;
+}
+if (money >= 10) {
+  console.log(`10 Notes : ${Math.floor(money / 10)}`);
+  money = money % 10;
+}
+if (money >= 5) {
+  console.log(`5 Notes :  ${Math.floor(money / 5)}`);
+  money = money % 5;
+}
+if (money >= 2) {
+  console.log(`2 Notes : ${Math.floor(money / 2)}`);
+  money = money % 2;
+}
+if (money === 1) {
+  console.log(`1 Notes : ${Math.floor(money / 1)}`);
 }
