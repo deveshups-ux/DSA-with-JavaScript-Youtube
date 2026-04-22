@@ -74,43 +74,62 @@
 // }
 
 // question 11 INR
-let money = Number(prompt("Enter The Amount : "));
+// let money = Number(prompt("Enter The Amount : "));
 
-if (isNaN(money)) {
-  console.log("Enter valid cost...");
-}
-if (money >= 500) {
-  console.log(`500 Notes : ${Math.floor(money / 500)}`);
-  money = money % 500;
-}
-if (money >= 200) {
-  console.log(`200 Notes : ${Math.floor(money / 200)}`);
-  money = money % 200;
-}
-if (money >= 100) {
-  console.log(`200 Notes : ${Math.floor(money / 100)}`);
-  money = money % 100;
-}
-if (money >= 50) {
-  console.log(`50 Notes : ${Math.floor(money / 50)}`);
-  money = money % 50;
-}
-if (money >= 20) {
-  console.log(`20 Notes : ${Math.floor(money / 20)}`);
-  money = money % 20;
-}
-if (money >= 10) {
-  console.log(`10 Notes : ${Math.floor(money / 10)}`);
-  money = money % 10;
-}
-if (money >= 5) {
-  console.log(`5 Notes :  ${Math.floor(money / 5)}`);
-  money = money % 5;
-}
-if (money >= 2) {
-  console.log(`2 Notes : ${Math.floor(money / 2)}`);
-  money = money % 2;
-}
-if (money === 1) {
-  console.log(`1 Notes : ${Math.floor(money / 1)}`);
+// if (isNaN(money)) {
+//   console.log("Enter valid cost...");
+// }
+// if (money >= 500) {
+//   console.log(`500 Notes : ${Math.floor(money / 500)}`);
+//   money = money % 500;
+// }
+// if (money >= 200) {
+//   console.log(`200 Notes : ${Math.floor(money / 200)}`);
+//   money = money % 200;
+// }
+// if (money >= 100) {
+//   console.log(`200 Notes : ${Math.floor(money / 100)}`);
+//   money = money % 100;
+// }
+// if (money >= 50) {
+//   console.log(`50 Notes : ${Math.floor(money / 50)}`);
+//   money = money % 50;
+// }
+// if (money >= 20) {
+//   console.log(`20 Notes : ${Math.floor(money / 20)}`);
+//   money = money % 20;
+// }
+// if (money >= 10) {
+//   console.log(`10 Notes : ${Math.floor(money / 10)}`);
+//   money = money % 10;
+// }
+// if (money >= 5) {
+//   console.log(`5 Notes :  ${Math.floor(money / 5)}`);
+//   money = money % 5;
+// }
+// if (money >= 2) {
+//   console.log(`2 Notes : ${Math.floor(money / 2)}`);
+//   money = money % 2;
+// }
+// if (money === 1) {
+//   console.log(`1 Notes : ${Math.floor(money / 1)}`);
+// }
+
+//Switch statements
+
+let player = "rudra";
+
+switch (player) {
+  case "dishant":
+  case "rudra":
+    console.log("Sniper King");
+    break;
+  case "devesh":
+    console.log("All Rounder Player");
+    break;
+  case "blue":
+    console.log("mag king");
+    break;
+  default:
+    console.log("No Player");
 }
