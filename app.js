@@ -117,19 +117,33 @@
 
 //Switch statements
 
-let player = "rudra";
+// let player = "rudra";
 
-switch (player) {
-  case "dishant":
-  case "rudra":
-    console.log("Sniper King");
-    break;
-  case "devesh":
-    console.log("All Rounder Player");
-    break;
-  case "blue":
-    console.log("mag king");
+// switch (player) {
+//   case "dishant":
+//   case "rudra":
+//     console.log("Sniper King");
+//     break;
+//   case "devesh":
+//     console.log("All Rounder Player");
+//     break;
+//   case "blue":
+//     console.log("mag king");
+//     break;
+//   default:
+//     console.log("No Player");
+// }
+
+//float precision issues
+
+let num = 0.1 + 0.2;
+
+num = Number(num.toFixed(1));
+
+switch (num) {
+  case 0.3:
+    console.log("matched");
     break;
   default:
-    console.log("No Player");
+    console.log("not match");
 }
