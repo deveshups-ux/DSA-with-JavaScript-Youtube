@@ -8,13 +8,13 @@ if (pr === null) {
     console.log("Enter Valid Number...");
   } else {
     if (n > 0) {
-      let isPrime = true;
-      for (let i = 2; i <= Math.floor(n / 2); i++) {
-        if (n % i === 0) {
-          isPrime = false;
-        }
+      let sum = 0;
+      while (n > 0) {
+        let rem = n % 10;
+        sum = sum + rem;
+        n = Math.floor(n / 10);
       }
-      console.log(isPrime);
+      console.log(sum);
     } else {
       console.log("should be + and more than 0");
     }
