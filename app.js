@@ -9,12 +9,21 @@ if (pr === null) {
   } else {
     if (n > 0) {
       let sum = 0;
+      let copy = n;
       while (n > 0) {
         let rem = n % 10;
-        sum = sum + rem;
+        let fact = 1;
+        for (let i = 1; i <= rem; i++) {
+          fact = fact * i;
+        }
+        sum = sum + fact;
         n = Math.floor(n / 10);
       }
-      console.log(sum);
+      if (copy === sum) {
+        console.log("Given Number --> Strong Number");
+      } else {
+        console.log("Given Number --> Not Strong Number");
+      }
     } else {
       console.log("should be + and more than 0");
     }
