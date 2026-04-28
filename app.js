@@ -1,23 +1,13 @@
 let prompt = require("prompt-sync")();
 
-let n = prompt("enter the number ");
+//left rotation by 1
 
-// for (let i = 1; i <= n; i++) {
-//   let ascii = 65;
-//   for (let j = 1; j <= i; j++) {
-//     process.stdout.write(String.fromCharCode(ascii) + " ");
-//     ascii++;
-//   }
-//   console.log();
-// }
-for (let i = 1; i <= n; i++) {
-  //spaces
-  for (let j = 1; j <= n - i; j++) {
-    process.stdout.write(" ");
-  }
-  //stars
-  for (let k = 1; k <= i; k++) {
-    process.stdout.write("*");
-  }
-  console.log();
+let arr = [1, 2, 3, 4, 5, 6, 7, 0, 5];
+let copy = arr[0];
+for (let i = 0; i < arr.length - 1; i++) {
+  arr[i] = arr[i + 1];
 }
+
+arr[arr.length - 1] = copy;
+
+console.log(arr);
