@@ -1,10 +1,14 @@
 let prompt = require("prompt-sync")();
 
-//right rotation by k=2
+//left rotation by k steps
 
 let arr = [7, 2, 3, 0, 5];
 
-for (let i = 1; i <= 2; i++) {
+let k = Number(prompt("Enter The Number"));
+
+k = k % arr.length;
+
+for (let i = 1; i <= k; i++) {
   let copy = arr[0];
   for (let j = 0; j < arr.length - 1; j++) {
     arr[j] = arr[j + 1];
