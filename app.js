@@ -1,13 +1,15 @@
 let prompt = require("prompt-sync")();
 
-//left rotation by 1
+//right rotation by k=2
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 0, 5];
-let copy = arr[0];
-for (let i = 0; i < arr.length - 1; i++) {
-  arr[i] = arr[i + 1];
+let arr = [7, 2, 3, 0, 5];
+
+for (let i = 1; i <= 2; i++) {
+  let copy = arr[0];
+  for (let j = 0; j < arr.length - 1; j++) {
+    arr[j] = arr[j + 1];
+  }
+  arr[arr.length - 1] = copy;
 }
-
-arr[arr.length - 1] = copy;
 
 console.log(arr);
